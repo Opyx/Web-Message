@@ -1,0 +1,230 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    text-decoration: none;
+    outline: 0;
+    list-style-type: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+.Chat{
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.Chat .sideBar{
+    width: 220px;
+    min-width: 220px;
+    background-color: rgb(129, 129, 129);
+    display: flex;
+    flex-direction: column;
+}
+
+.Chat .content{
+    flex: 1;
+    background-color: rgb(179, 179, 179);
+    border-left: 2px solid rgb(94, 94, 94);
+    display: flex;
+    flex-direction: column;
+}
+
+.arama{
+    position: relative;
+    font-size: 1rem;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.arama input{
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 40px 0 10px;
+    border-bottom: 2px solid black;
+}
+
+.arama i{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    width: 40px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kisiler{
+    overflow: auto;
+}
+
+.kisiler ul li{
+    background-color: rgba(158, 158, 158, 0.527);
+    border-radius: 30px;
+    padding: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.kisiler ul li:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+.kisiler ul li img{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.masage-div{
+    position: relative;
+    display: inline-block;
+    top: -5px;
+}
+
+.name{
+    font-weight: 900;
+    border-bottom: 1px solid black;
+    font-family: cursive;
+}
+
+.masage{
+    font-size: 15px;
+}
+
+
+.header{
+    position: relative;
+    background-color: rgb(214, 214, 214);
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+
+.ms-div{
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.self-name{
+    font-weight: 900;
+    border-bottom: 1px dashed black;
+    font-family: cursive;
+}
+
+.online{
+    font-size: 13px;
+    font-family: monospace;
+}
+
+.header i{
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    left: -2%;
+    top: -3%;
+    z-index: 2;
+}
+
+.ii{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    right: 13px;
+    top: 9px;
+}
+
+.ii::before{
+    content: '';
+    background-color: rgba(163, 163, 163, 0.651);
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    right: -1px;
+    top: -1px;
+    transition: 0.3s;
+    transform-origin: 1 0;
+    transition-timing-function: calc();
+}
+
+.ia::before{
+    transform: scale(0);
+}
+
+.ia:hover::before{
+    transform: scale(1);
+}
+
+.info{
+    position: absolute;
+    display: inline-block;
+    right: 45px;
+    top: 8px;
+}
+
+.chat_content{
+    flex: 1;
+}
+
+.form{
+    border-top: 2px solid rgb(0, 0, 0);
+    background-color: rgb(150, 150, 150);
+    padding: 6px;
+}
+
+.form ul {
+    display: flex;
+}
+
+.form ul li.input{
+    flex: 1;
+}
+
+.form ul li.input input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 36px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form ul li{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.form ul li i{
+    font-size: 1.7rem;
+    margin-top: 3px;
+}
+
+.form ul li i:hover{
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.form ul li:nth-child(1){
+    color: rgb(145, 255, 0);
+}
+
+.form ul li:nth-child(3){
+    color: rgb(255, 0, 0);
+}
+
+.form ul li:nth-child(4){
+    color: rgb(0, 82, 136);
+}
